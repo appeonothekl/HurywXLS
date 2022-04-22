@@ -1,27 +1,3 @@
-Leaflet Changelog
-=================
-
-(all changes without author notice are by [@mourner](https://github.com/mourner))
-
-## 1.8.0 (2022-04-18)
-
-### ⚠️ Breaking Changes
-
-* Improve reliability of `contextmenu` event simulation on mobile Safari by introducing a new `TapHold` handler, replacing legacy `Tap` ([#7026](https://github.com/Leaflet/Leaflet/pull/7026) by [@johnd0e](https://github.com/johnd0e))
-* Reorganize `DivOverlay`/`Popup`/`Tooltip` APIs ([#7540](https://github.com/Leaflet/Leaflet/pull/7540) by [@johnd0e](https://github.com/johnd0e))
-    * Move `Popup` related options from `DivOverlay` to `Popup` ([#7778](https://github.com/Leaflet/Leaflet/pull/7778) by [@Falke-Design](https://github.com/Falke-Design))
-    * Change `Tooltip` class from `leaflet-clickable` to `leaflet-interactive` ([#7719](https://github.com/Leaflet/Leaflet/pull/7719) by [@Falke-Design](https://github.com/Falke-Design))
-    * `Map.closeTooltip` now requires a layer as argument ([#7533](https://github.com/Leaflet/Leaflet/pull/7533) by [@johnd0e](https://github.com/johnd0e))
-* Improve error / argument handling for event listeners ([#7518](https://github.com/Leaflet/Leaflet/pull/7518) by [@johnd0e](https://github.com/johnd0e))
-* Improve reliability of touch events simulation on non-touch devices (`DomEvent.Pointer`) ([#7059](https://github.com/Leaflet/Leaflet/pull/7059), [#7084](https://github.com/Leaflet/Leaflet/pull/7084), [#7415](https://github.com/Leaflet/Leaflet/pull/7415) by [@johnd0e](https://github.com/johnd0e))
-* Improve reliability of `dblclick` event simulation on touch devices (`DomEvent.DoubleTap`) ([#7027](https://github.com/Leaflet/Leaflet/pull/7027) by [@johnd0e](https://github.com/johnd0e))
-* Improve reliability of `disableClickPropagation` ([#7439](https://github.com/Leaflet/Leaflet/pull/7439) by [@johnd0e](https://github.com/johnd0e))
-* Improve `Map` `hasLayer()` and `LayerGroup` `hasLayer()` to require a layer as argument ([#6999](https://github.com/Leaflet/Leaflet/pull/6999) by [@johnd0e](https://github.com/johnd0e))
-* Fix `Class.include` to not overwrite `options` ([#7756](https://github.com/Leaflet/Leaflet/pull/7756) by [@johnd0e](https://github.com/johnd0e))
-* Fix `Class.extend` to not modify source props object ([#6766](https://github.com/Leaflet/Leaflet/pull/6766) by [@johnd0e](https://github.com/johnd0e))
-* Improve `Browser.touch` touch devices detection ([#7029](https://github.com/Leaflet/Leaflet/pull/7029) by [@johnd0e](https://github.com/johnd0e))
-* Get rid of legacy Android hacks ([#7022](https://github.com/Leaflet/Leaflet/pull/7022) by [@johnd0e](https://github.com/johnd0e))
-* Allow fonts to respect users' browser settings by making the `font-size` _relative_ to the map container. (You can change the font size on `leaflet-container` to adjust it if needed.) ([#7800](https://github.com/Leaflet/Leaflet/pull/7800) by [@Chandu-4444](https://github.com/Chandu-4444))
 
 ### ❇️ API changes
 
